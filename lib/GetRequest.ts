@@ -11,7 +11,7 @@ const GetRequest = <T>(url: string): {
 
 
     useEffect(() => {
-        fetch(`http://localhost:3000${url}`)
+        fetch(`http://localhost:3000/api${url}`)
             .then(async (result) => {
                 const json = await result.json();
                 if (result.ok) {
